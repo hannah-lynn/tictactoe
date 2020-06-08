@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <section class="game">
+      <div class="title">
+        <h1>Tic | Tac | Toe</h1>
+      </div>
+      <!-- <div class="score">
+        <div class="player">
+          <h2>Circles</h2>
+          <p>0</p>
+        </div>
+        <div class="comp">
+          <h2>X's</h2>
+          <p>0</p>
+        </div>
+      </div> -->
+
+      <div class="intro">
+        <button class="play">Play</button>
+      </div>
+
+      <div class="match fadeout">
+        <div class="board" id="board">
+          <div class="square" data-cell></div>
+          <div class="square" data-cell></div>
+          <div class="square" data-cell></div>
+          <div class="square" data-cell></div>
+          <div class="square" data-cell></div>
+          <div class="square" data-cell></div>
+          <div class="square" data-cell></div>
+          <div class="square" data-cell></div>
+          <div class="square" data-cell></div>
+        </div>
+      </div>
+
+      <div class="winning-msg" id="winning-msg">
+        <div data-winning-msg-text></div>
+        <button id="restart-btn">Restart</button>
+      </div>
+    </section>
+    <footer>
+      <a href="https://www.freepik.com/free-photos-vectors/star"
+        >Star vector created by upklyak - www.freepik.com</a
+      >
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
