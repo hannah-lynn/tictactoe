@@ -28,10 +28,6 @@ body {
   flex-direction: column;
 }
 
-.container {
-  display: flex;
-}
-
 .title,
 .score {
   display: flex;
@@ -42,11 +38,11 @@ body {
 }
 
 .title h1 {
-  font-size: 1.8em;
+  font-size: 5vh;
   color: rgb(43, 42, 42);
 }
 
-.score h2 {
+/* .score h2 {
   font-size: 1.5em;
   color: rgb(120, 38, 120);
 }
@@ -56,16 +52,18 @@ body {
   text-align: center;
   font-size: 1.3em;
   color: rgb(120, 38, 120);
-}
+} */
 
-.intro {
-  height: 40vh;
+/* .intro {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   transition: opacity 0.5s ease 0.5s;
-  opacity: 0;
+  background-color: rgb(120, 38, 120);
+  opacity: 0.9;
+  z-index: 1;
 }
 
 .intro button {
@@ -75,9 +73,8 @@ body {
   font-family: 'Press Start 2P', cursive;
   cursor: pointer;
   outline: none;
-  /* background: rgb(238, 142, 16); */
   animation: glowing 1300ms infinite;
-}
+} */
 
 @keyframes glowing {
   0% {
@@ -98,6 +95,7 @@ body {
   position: absolute;
   top: 60%;
   left: 50%;
+  cursor: pointer;
   transform: translate(-50%, -50%);
   transition: opacity 0.5s ease 0.5s;
 }
@@ -220,7 +218,7 @@ body {
   display: flex;
 }
 
-div.fadeOut {
+/* div.fadeOut {
   opacity: 0;
   pointer-events: none;
 }
@@ -228,11 +226,11 @@ div.fadeOut {
 div.fadeIn {
   opacity: 1;
   pointer-events: all;
-}
+} */
 
 footer {
+  padding-top: 80vh;
   font-size: 0.5em;
-  padding: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;

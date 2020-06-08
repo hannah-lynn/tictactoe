@@ -16,16 +16,18 @@ const winners = [
 const restartBtn = document.getElementById('restart-btn');
 let circleTurn;
 
-const game = () => {
-  const playBtn = document.querySelector('.intro button');
-  const introScreen = document.querySelector('.intro');
-  const match = document.querySelector('.match');
+// const game = () => {
+//   const playBtn = document.querySelector('.intro button');
+//   const introScreen = document.querySelector('.intro');
+//   const match = document.querySelector('.match');
 
-  playBtn.addEventListener('click', () => {
-    introScreen.classList.add('fadeOut');
-    match.classList.add('fadeIn');
-  });
-};
+//   playBtn.addEventListener('click', () => {
+//     introScreen.classList.add('fadeOut');
+//     match.classList.add('fadeIn');
+//   });
+// };
+
+// game();
 
 startGame();
 
@@ -87,5 +89,3 @@ function checkWin(currentClass) {
     });
   });
 }
-
-game();
